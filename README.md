@@ -9,10 +9,10 @@ Understanding many different ways to send data between activities using Intent
 - [x] Serializable
 - [x] Parcelable
 
-# Activity A (ActivityStart)
+### Activity A (ActivityStart)
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776356-04185f50-b047-4d13-9a49-471bea4eb161.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776356-04185f50-b047-4d13-9a49-471bea4eb161.png">
 </p>
 
 <p align="center">
@@ -22,7 +22,7 @@ Understanding many different ways to send data between activities using Intent
 <br></br>
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776366-0dbdbf5e-3cff-46a0-bd87-57b75838379e.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776366-0dbdbf5e-3cff-46a0-bd87-57b75838379e.png">
 </p>
 
 <p align="center">
@@ -31,10 +31,10 @@ Understanding many different ways to send data between activities using Intent
 
 <br></br>
 
-# Activity B (ActivityEnd)
+### Activity B (ActivityEnd)
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776617-eb5407b4-fd20-4cd9-9db0-4f1e79130f37.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776617-eb5407b4-fd20-4cd9-9db0-4f1e79130f37.png">
 </p>
 
 <p align="center">
