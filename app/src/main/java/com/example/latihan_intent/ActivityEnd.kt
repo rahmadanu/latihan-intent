@@ -26,12 +26,12 @@ class ActivityEnd : AppCompatActivity() {
         val age = intent.getIntExtra(ActivityStart.DEFAULT_AGE, 0)
         val address = intent.getStringExtra(ActivityStart.DEFAULT_ADDRESS)
 
-        binding.apply {
-            tvDefaultFullName.text = fullName
-            tvDefaultNickname.text = nickname
-            tvDefaultAge.text = age.toString()
-            tvDefaultAddress.text = address
-        }
+        binding.tvDefaultDetails.text =
+            getString(R.string.intent_details,
+                fullName,
+                nickname,
+                age.toString(),
+                address)
     }
 
     private fun bundleIntent() {
@@ -41,41 +41,51 @@ class ActivityEnd : AppCompatActivity() {
         val age = Bundle?.getInt(ActivityStart.BUNDLE_AGE, 0)
         val address = Bundle?.getString(ActivityStart.BUNDLE_ADDRESS)
 
-        binding.apply {
-            tvBundleFullName.text = fullName
-            tvBundleNickname.text = nickname
-            tvBundleAge.text = age.toString()
-            tvBundleAddress.text = address
-        }
+        binding.tvBundleDetails.text =
+            getString(R.string.intent_details,
+                fullName,
+                nickname,
+                age.toString(),
+                address)
     }
 
     private fun serializableIntent() {
         val user = intent.getSerializableExtra(ActivityStart.USER_SERIALIZABLE) as? User1
 
-        binding.apply {
-            if (user != null) {
-                tvSerializableFullName.text = user.fullName
-                tvSerializableNickname.text = user.nickName
-                tvSerializableAge.text = user.age.toString()
-                tvSerializableAddress.text = user.address
-            } else {
-                tvSerializableAge.text = "0"
-            }
+        if (user != null) {
+            binding.tvSerializableDetails.text =
+                getString(R.string.intent_details,
+                    user.fullName,
+                    user.nickname,
+                    user.age.toString(),
+                    user.address)
+        } else {
+            binding.tvSerializableDetails.text =
+                getString(R.string.intent_details,
+                    null,
+                    null,
+                    "0",
+                    null)
         }
     }
 
     private fun parcelableIntent() {
         val user = intent.getParcelableExtra<User2>(ActivityStart.USER_PARCELABLE)
 
-        binding.apply {
-            if (user != null) {
-                tvParcelableFullName.text = user.fullName
-                tvParcelableNickname.text = user.nickName
-                tvParcelableAge.text = user.age.toString()
-                tvParcelableAddress.text = user.address
-            } else {
-                tvParcelableAge.text = "0"
-            }
+        if (user != null) {
+            binding.tvParcelableDetails.text =
+                getString(R.string.intent_details,
+                    user.fullName,
+                    user.nickname,
+                    user.age.toString(),
+                    user.address)
+        } else {
+            binding.tvParcelableDetails.text =
+                getString(R.string.intent_details,
+                    null,
+                    null,
+                    "0",
+                    null)
         }
     }
 

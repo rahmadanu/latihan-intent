@@ -21,50 +21,86 @@ class ActivityStart : AppCompatActivity() {
         val address = binding.etAddress.text
 
         binding.btnDefault.setOnClickListener {
-            val defaultIntent = Intent(this, ActivityEnd::class.java)
-            defaultIntent.putExtra(DEFAULT_FULL_NAME, fullName.toString()) //why must convert here
-            defaultIntent.putExtra(DEFAULT_NICKNAME, nickname.toString())
-            defaultIntent.putExtra(DEFAULT_AGE, age.toString().toInt())
-            defaultIntent.putExtra(DEFAULT_ADDRESS, address.toString())
 
-            startActivity(defaultIntent)
+            if (!isInputEmpty()) {
+                val defaultIntent = Intent(this, ActivityEnd::class.java)
+                defaultIntent.putExtra(DEFAULT_FULL_NAME, fullName.toString()) //why it must convert here
+                defaultIntent.putExtra(DEFAULT_NICKNAME, nickname.toString())
+                defaultIntent.putExtra(DEFAULT_AGE, age.toString().toInt())
+                defaultIntent.putExtra(DEFAULT_ADDRESS, address.toString())
+
+                startActivity(defaultIntent)
+            }
         }
 
         binding.btnBundle.setOnClickListener {
-            val bundleIntent = Intent(this, ActivityEnd::class.java)
-            val bundle = Bundle()
-            bundle.putString(BUNDLE_FULL_NAME, fullName.toString())
-            bundle.putString(BUNDLE_NICKNAME, nickname.toString())
-            bundle.putInt(BUNDLE_AGE, age.toString().toInt())
-            bundle.putString(BUNDLE_ADDRESS, address.toString())
 
-            bundleIntent.putExtras(bundle)
-            startActivity(bundleIntent)
+            if (!isInputEmpty()) {
+                val bundleIntent = Intent(this, ActivityEnd::class.java)
+                val bundle = Bundle()
+                bundle.putString(BUNDLE_FULL_NAME, fullName.toString())
+                bundle.putString(BUNDLE_NICKNAME, nickname.toString())
+                bundle.putInt(BUNDLE_AGE, age.toString().toInt())
+                bundle.putString(BUNDLE_ADDRESS, address.toString())
+
+                bundleIntent.putExtras(bundle)
+                startActivity(bundleIntent)
+            }
         }
 
         binding.btnSerializable.setOnClickListener {
-            val user = User1(
-                fullName.toString(),
-                nickname.toString(),
-                age.toString().toInt(),
-                address.toString())
 
-            val serializableIntent = Intent(this, ActivityEnd::class.java)
-            serializableIntent.putExtra(USER_SERIALIZABLE, user)
-            startActivity(serializableIntent)
+            if (!isInputEmpty()) {
+                val user = User1(
+                    fullName.toString(),
+                    nickname.toString(),
+                    age.toString().toInt(),
+                    address.toString()
+                )
+
+                val serializableIntent = Intent(this, ActivityEnd::class.java)
+                serializableIntent.putExtra(USER_SERIALIZABLE, user)
+                startActivity(serializableIntent)
+            }
         }
 
         binding.btnParcelable.setOnClickListener {
-            val user = User2(
-                fullName.toString(),
-                nickname.toString(),
-                age.toString().toInt(),
-                address.toString())
 
-            val parcelableIntent = Intent(this, ActivityEnd::class.java)
-            parcelableIntent.putExtra(USER_PARCELABLE, user)
-            startActivity(parcelableIntent)
+            if (!isInputEmpty()) {
+                val user = User2(
+                    fullName.toString(),
+                    nickname.toString(),
+                    age.toString().toInt(),
+                    address.toString()
+                )
+
+                val parcelableIntent = Intent(this, ActivityEnd::class.java)
+                parcelableIntent.putExtra(USER_PARCELABLE, user)
+                startActivity(parcelableIntent)
+            }
         }
+    }
+
+    private fun isInputEmpty() : Boolean {
+        binding.apply {
+            if (etFullName.length() == 0) {
+                etFullName.error = "Full name is required"
+                return true
+            }
+            if (etNickname.length() == 0) {
+                etNickname.error = "Nickname is required"
+                return true
+            }
+            if (etAge.length() == 0) {
+                etAge.error = "Age is required"
+                return true
+            }
+            if (etAddress.length() == 0) {
+                etAddress.error = "Address is required"
+                return true
+            }
+        }
+        return false
     }
 
     override fun onDestroy() {
@@ -85,7 +121,5 @@ class ActivityStart : AppCompatActivity() {
         const val BUNDLE_NICKNAME = "bundle_nickname"
         const val BUNDLE_AGE = "bundle_age"
         const val BUNDLE_ADDRESS = "bundle_address"
-
-
     }
 }

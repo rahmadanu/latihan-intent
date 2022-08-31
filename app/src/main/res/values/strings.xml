@@ -6,6 +6,8 @@
     <string name="age">Age</string>
     <string name="address">Address</string>
     <string name="bundle">Bundle</string>
+    <string name="intent_details">full name: %1$s\nnickname: %2$s\nage: %3$s years old\naddress: %4$s</string>
     <string name="serializable">Serializable</string>
     <string name="parcelable">Parcelable</string>
+    <string name="intent_details_dummy">Rahma Danu Sadewa\nDanu\n20 years old\nJl. Rungkut Madya No.1</string>
 </resources>

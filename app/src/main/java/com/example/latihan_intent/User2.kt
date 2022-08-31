@@ -5,7 +5,7 @@ import android.os.Parcelable
 
 data class User2(
     val fullName: String?,
-    val nickName: String?,
+    val nickname: String?,
     val age: Int,
     val address: String?
 ) : Parcelable {
@@ -19,7 +19,7 @@ data class User2(
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(fullName)
-        parcel.writeString(nickName)
+        parcel.writeString(nickname)
         parcel.writeInt(age)
         parcel.writeString(address)
     }
