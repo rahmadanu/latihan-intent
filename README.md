@@ -30,7 +30,10 @@ Understanding many different ways to send data between activities using Intent
 
 <p align="center">
   <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776633-70587c47-170e-4004-bfea-f427912391fb.png">
-  Bundle
+</p>
+
+<p align="center">
+  <b>Bundle</b>
 </p>
 
 <br></br>
