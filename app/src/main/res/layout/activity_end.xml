@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ActivityEnd">
+
+    <TextView
+        android:id="@+id/tv_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/satu_per_satu"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    
+    <TextView
+        android:id="@+id/tv_default_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_default"
+        app:layout_constraintStart_toStartOf="@id/tv_default"
+        tools:text="Rahma Danu Sadewa" />
+
+    <TextView
+        android:id="@+id/tv_default_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_default_full_name"
+        app:layout_constraintStart_toStartOf="@id/tv_default_full_name"
+        tools:text="Danu" />
+
+    <TextView
+        android:id="@+id/tv_default_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_default_nickname"
+        app:layout_constraintStart_toStartOf="@id/tv_default_nickname"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tv_default_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_default_age"
+        app:layout_constraintStart_toStartOf="@id/tv_default_age"
+        tools:text="Jalan jalan" />
+
+
+    <TextView
+        android:id="@+id/tv_bundle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/bundle"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_default_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_bundle_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_bundle"
+        app:layout_constraintStart_toStartOf="@id/tv_bundle"
+        tools:text="Rahma Danu Sadewa" />
+
+    <TextView
+        android:id="@+id/tv_bundle_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_bundle_full_name"
+        app:layout_constraintStart_toStartOf="@id/tv_bundle_full_name"
+        tools:text="Danu" />
+
+    <TextView
+        android:id="@+id/tv_bundle_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_bundle_nickname"
+        app:layout_constraintStart_toStartOf="@id/tv_default_nickname"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tv_bundle_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_bundle_age"
+        app:layout_constraintStart_toStartOf="@id/tv_default_age"
+        tools:text="Jalan jalan" />
+
+
+    <TextView
+        android:id="@+id/tv_serializable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/serializable"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_bundle_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_serializable_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_serializable"
+        app:layout_constraintStart_toStartOf="@id/tv_serializable"
+        tools:text="Rahma Danu Sadewa" />
+
+    <TextView
+        android:id="@+id/tv_serializable_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_serializable_full_name"
+        app:layout_constraintStart_toStartOf="@id/tv_serializable_full_name"
+        tools:text="Danu" />
+
+    <TextView
+        android:id="@+id/tv_serializable_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_serializable_nickname"
+        app:layout_constraintStart_toStartOf="@id/tv_serializable_nickname"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tv_serializable_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_serializable_age"
+        app:layout_constraintStart_toStartOf="@id/tv_serializable_age"
+        tools:text="Jalan jalan" />
+
+
+    <TextView
+        android:id="@+id/tv_parcelable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/parcelable"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/tv_serializable_address"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_parcelable_full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_parcelable"
+        app:layout_constraintStart_toStartOf="@id/tv_parcelable"
+        tools:text="Rahma Danu Sadewa" />
+
+    <TextView
+        android:id="@+id/tv_parcelable_nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_parcelable_full_name"
+        app:layout_constraintStart_toStartOf="@id/tv_parcelable_full_name"
+        tools:text="Danu" />
+
+    <TextView
+        android:id="@+id/tv_parcelable_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_parcelable_nickname"
+        app:layout_constraintStart_toStartOf="@id/tv_parcelable_nickname"
+        tools:text="20" />
+
+    <TextView
+        android:id="@+id/tv_parcelable_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_parcelable_age"
+        app:layout_constraintStart_toStartOf="@id/tv_parcelable_age"
+        tools:text="Jalan jalan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

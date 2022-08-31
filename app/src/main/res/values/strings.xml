@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">latihan-intent</string>
+    <string name="satu_per_satu">Satu per satu</string>
+    <string name="full_name">Full name</string>
+    <string name="nickname">Nickname</string>
+    <string name="age">Age</string>
+    <string name="address">Address</string>
+    <string name="bundle">Bundle</string>
+    <string name="serializable">Serializable</string>
+    <string name="parcelable">Parcelable</string>
+</resources>

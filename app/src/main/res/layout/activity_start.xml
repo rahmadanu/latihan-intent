@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".ActivityStart">
+
+    <EditText
+        android:id="@+id/et_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/full_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_nickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nickname"
+        app:layout_constraintTop_toBottomOf="@id/et_full_name"
+        app:layout_constraintStart_toStartOf="@id/et_full_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_age"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/age"
+        android:inputType="numberDecimal"
+        app:layout_constraintTop_toBottomOf="@id/et_nickname"
+        app:layout_constraintStart_toStartOf="@id/et_nickname"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/address"
+        app:layout_constraintTop_toBottomOf="@id/et_age"
+        app:layout_constraintStart_toStartOf="@id/et_age"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/btn_default"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/satu_per_satu"
+        app:layout_constraintTop_toBottomOf="@id/et_address"
+        app:layout_constraintStart_toStartOf="@id/et_address" />
+
+    <Button
+        android:id="@+id/btn_bundle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bundle"
+        app:layout_constraintTop_toBottomOf="@id/btn_default"
+        app:layout_constraintStart_toStartOf="@id/btn_default" />
+
+    <Button
+        android:id="@+id/btn_serializable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/serializable"
+        app:layout_constraintTop_toBottomOf="@id/btn_bundle"
+        app:layout_constraintStart_toStartOf="@id/btn_bundle" />
+
+    <Button
+        android:id="@+id/btn_parcelable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/parcelable"
+        app:layout_constraintTop_toBottomOf="@id/btn_serializable"
+        app:layout_constraintStart_toStartOf="@id/btn_serializable" />
+
+    <TextView
+        android:id="@+id/tv_testing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
