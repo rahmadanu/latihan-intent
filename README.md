@@ -44,7 +44,7 @@ Understanding many different ways to send data between activities using Intent
 <br></br>
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776633-70587c47-170e-4004-bfea-f427912391fb.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776633-70587c47-170e-4004-bfea-f427912391fb.png">
 </p>
 
 <p align="center">
@@ -54,7 +54,7 @@ Understanding many different ways to send data between activities using Intent
 <br></br>
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776648-60c4a1e8-1157-4f55-8cb8-37b8e143bd21.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776648-60c4a1e8-1157-4f55-8cb8-37b8e143bd21.png">
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@ Understanding many different ways to send data between activities using Intent
 <br></br>
 
 <p align="center">
-  <img width=360 height=720 src="https://user-images.githubusercontent.com/96525733/187776662-833d8451-8853-44e6-9f0a-119c7eaf9b6e.png">
+  <img src="https://user-images.githubusercontent.com/96525733/187776662-833d8451-8853-44e6-9f0a-119c7eaf9b6e.png">
 </p>
 
 <p align="center">
